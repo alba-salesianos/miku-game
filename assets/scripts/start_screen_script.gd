@@ -3,4 +3,4 @@ extends Node2D
 func _input(event):
 	if event is InputEventKey:
 		if event.pressed:
-			get_tree().change_scene_to_file("res://assets/scenes/Main.tscn")
+			get_tree().change_scene_to_file("res://assets/scenes/main.tscn")

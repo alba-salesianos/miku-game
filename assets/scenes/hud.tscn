@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://0glbp8ejo52a"]
+
+[ext_resource type="Script" path="res://assets/scripts/hud.gd" id="1_60224"]
+[ext_resource type="PackedScene" uid="uid://df63nrrx744ts" path="res://assets/scenes/pause_menu.tscn" id="2_sfhpi"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_60224")
+
+[node name="Score" type="RichTextLabel" parent="."]
+offset_right = 184.0
+offset_bottom = 40.0
+
+[node name="PauseMenu" parent="." instance=ExtResource("2_sfhpi")]
