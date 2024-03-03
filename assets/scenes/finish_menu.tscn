@@ -36,6 +36,24 @@ grow_vertical = 2
 layout_mode = 2
 theme = ExtResource("2_peafo")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/Panel"]
+custom_minimum_size = Vector2(50, 25)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.5
+offset_top = -60.0
+offset_right = 53.5
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+bbcode_enabled = true
+text = "[center][font_size={15}]¡Has ganado!"
+
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Panel"]
 layout_mode = 1
 anchors_preset = 8
@@ -52,13 +70,6 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 alignment = 1
-
-[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/Panel/VBoxContainer"]
-custom_minimum_size = Vector2(0, 25)
-layout_mode = 2
-theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
-bbcode_enabled = true
-text = "[font_size={10}]¡Has ganado!"
 
 [node name="Restart" type="Button" parent="MarginContainer/Panel/VBoxContainer"]
 layout_mode = 2

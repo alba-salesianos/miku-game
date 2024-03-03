@@ -1,6 +1,5 @@
 extends Control
 
-
 func _ready() -> void: self.hide()
 
 var _is_paused = false:
@@ -8,7 +7,8 @@ var _is_paused = false:
 
 func _unhandled_key_input(event):
 	if event.is_action_pressed("pause_menu"):
-		_is_paused = !_is_paused
+		if not get_node("/root/Main/HUD/FinishMenu").is_visible_in_tree():
+			_is_paused = !_is_paused
 		
 
 func set_paused(value):
@@ -17,7 +17,6 @@ func set_paused(value):
 
 func _on_restart_pressed():
 	get_tree().reload_current_scene()
-
 
 func _on_quit_pressed():
 	get_tree().quit()
