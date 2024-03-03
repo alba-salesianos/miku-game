@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://dg7bo4b4qljni"]
 
-[ext_resource type="Texture2D" uid="uid://dwab5y0eh8p3s" path="res://assets/sprites/sky_background.png" id="2_a70p7"]
-[ext_resource type="PackedScene" uid="uid://csuvmpwwvqvw4" path="res://assets/scenes/miku.tscn" id="2_nvshy"]
-[ext_resource type="PackedScene" uid="uid://phm4taqfh08d" path="res://assets/scenes/musical_note.tscn" id="4_mmqc2"]
-[ext_resource type="Texture2D" uid="uid://dviqklpdgongw" path="res://assets/sprites/Assets.png" id="5_udj7k"]
-[ext_resource type="PackedScene" uid="uid://0glbp8ejo52a" path="res://assets/scenes/hud.tscn" id="6_o4lrm"]
-[ext_resource type="PackedScene" uid="uid://df63nrrx744ts" path="res://assets/scenes/menu.tscn" id="6_o8m2l"]
+[ext_resource type="Texture2D" uid="uid://dwab5y0eh8p3s" path="res://assets/sprites/background/sky_background.png" id="2_a70p7"]
+[ext_resource type="PackedScene" path="res://assets/scenes/miku.tscn" id="2_nvshy"]
+[ext_resource type="PackedScene" path="res://assets/scenes/musical_note.tscn" id="4_mmqc2"]
+[ext_resource type="Texture2D" uid="uid://dviqklpdgongw" path="res://assets/sprites/background/tileset_assets.png" id="5_udj7k"]
+[ext_resource type="PackedScene" path="res://assets/scenes/hud.tscn" id="6_o4lrm"]
+[ext_resource type="PackedScene" path="res://assets/scenes/menu.tscn" id="6_o8m2l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3qhp"]
 texture = ExtResource("5_udj7k")

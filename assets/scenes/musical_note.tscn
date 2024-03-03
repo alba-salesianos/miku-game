@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://phm4taqfh08d"]
+
+[ext_resource type="Script" path="res://assets/scripts/musical_note.gd" id="1_kqmtu"]
+[ext_resource type="Texture2D" uid="uid://6g7d1dbddtql" path="res://assets/sprites/musical notes.png" id="2_wpfrt"]
+[ext_resource type="AudioStream" uid="uid://cv5r2us0x080u" path="res://assets/audio/coin-collect-retro-8-bit-sound-effect-145251.mp3" id="3_1bvu8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qs2cd"]
+radius = 154.081
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_kqmtu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_wpfrt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qs2cd")
+
+[node name="note_sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_1bvu8")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
