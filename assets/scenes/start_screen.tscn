@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://eti62pelbefy"]
+
+[ext_resource type="Script" path="res://assets/scripts/start_screen_script.gd" id="1_17dl1"]
+[ext_resource type="Texture2D" uid="uid://d2w0qk1h6abo" path="res://assets/sprites/start screen.png" id="1_lsinc"]
+[ext_resource type="Theme" uid="uid://80p5qjdn70la" path="res://assets/theme/ui_theme.tres" id="2_56cky"]
+[ext_resource type="Script" path="res://assets/scripts/press_start.gd" id="2_ewkql"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_17dl1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, 0)
+zoom = Vector2(1.26, 1.26)
+
+[node name="MikuBackground" type="Sprite2D" parent="Camera2D"]
+texture = ExtResource("1_lsinc")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Camera2D"]
+offset_left = -146.0
+offset_top = 195.0
+offset_right = 170.0
+offset_bottom = 219.0
+theme = ExtResource("2_56cky")
+bbcode_enabled = true
+text = "[b]PULSA CUALQUIER TECLA PARA JUGAR"
+script = ExtResource("2_ewkql")

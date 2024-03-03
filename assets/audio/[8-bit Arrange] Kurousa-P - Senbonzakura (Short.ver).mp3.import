@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fo5gy2qt5ds0"
+path="res://.godot/imported/[8-bit Arrange] Kurousa-P - Senbonzakura (Short.ver).mp3-c305d33f35fae4917270fe5e9d97abcf.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/[8-bit Arrange] Kurousa-P - Senbonzakura (Short.ver).mp3"
+dest_files=["res://.godot/imported/[8-bit Arrange] Kurousa-P - Senbonzakura (Short.ver).mp3-c305d33f35fae4917270fe5e9d97abcf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

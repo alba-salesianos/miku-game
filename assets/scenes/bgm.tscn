@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://g2atciingfag"]
+
+[ext_resource type="AudioStream" uid="uid://fo5gy2qt5ds0" path="res://assets/audio/[8-bit Arrange] Kurousa-P - Senbonzakura (Short.ver).mp3" id="1_xa54i"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_xa54i")
+autoplay = true
